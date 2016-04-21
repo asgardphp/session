@@ -4,9 +4,8 @@ class Session extends \Asgard\Migration\DBMigration {
 		$table = $this->container['config']['database.prefix'].'session';
 		$this->container['schema']->create($table, function($table) {
 			$table->addColumn('id', 'integer', [
-				'string' => 32,
 			]);
-			$table->addColumn('access', 'datetime', [
+			$table->addColumn('access', 'bigint', [
 			]);
 			$table->addColumn('data', 'text', [
 			]);

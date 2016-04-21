@@ -18,7 +18,7 @@ Session is a package for custom PHP session drivers.
 
 Add the following code in app/bootstrap_*.php:
 
-	$session = new \Asgard\Session\DBSession($container['db']);
+	$session = new \Asgard\Session\DBDriver($container['db']);
 	$session->handle();
 
 ###Contributing
